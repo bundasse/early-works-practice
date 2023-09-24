@@ -1,5 +1,5 @@
 <template>
-    <div class=" col-span-full flex justify-between px-3 py-3 bg-cyan-600 text-white">
+    <div class="col-span-full flex justify-between px-3 py-3 bg-cyan-600 text-white">
         <h1><router-link to="/">기업로고</router-link></h1>
         <ul class="flex gap-x-3 items-stretch">
             <li>검색</li>

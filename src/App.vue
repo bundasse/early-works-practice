@@ -2,7 +2,7 @@
   <div class="grid grid-cols-[250px_1fr] grid-rows-[50px_minmax(800px,_1fr)]">
     <GnbComp/>
     <LnbComp/>
-    <div class="px-2 py-2 ">
+    <div>
       <RouterView />
     </div>
   </div>
