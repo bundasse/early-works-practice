@@ -8,7 +8,7 @@
                 </p>
                 <!-- 서브메뉴 -->
                 <ul>
-                    <li :class="openMenu === i ? '' : 'hidden'" v-for="(el, index) in submenulist[i]" :key="index" class="px-3 py-2 bg-gray-500 hover:bg-gray-300 cursor-pointer">
+                    <li :class="openMenu === i ? '' : 'hidden'" v-for="(el, index) in submenulist[i]" :key="index" class="px-3 py-2 bg-gray-400 hover:bg-gray-300 cursor-pointer">
                         <router-link :to="el.link">{{ el.name }}</router-link>
                     </li>
                 </ul>

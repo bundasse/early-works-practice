@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Line :data="chartData" :options="chartOptions" />
+        <Line :data="chartData" :options="chartOptions"/>
     </div>
 </template>
 <script>
@@ -13,18 +13,15 @@ export default {
     name:'LineChart',
     data() {
         return {
-            chartData:{
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                datasets: [
-                    {
-                    label: 'Data One',
-                    backgroundColor: '#f87979',
-                    data: [40, 39, 10, 40, 39, 80, 40]
-                    }
-                ]},
             chartOptions: {
                 responsive: true
             }
+        }
+    },
+    props:{
+        chartData:{
+            type:Object,
+            required:true
         }
     },
     components:{
