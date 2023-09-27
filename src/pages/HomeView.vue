@@ -6,8 +6,8 @@
             <PieChart :chartData="e" />
         </div>
         <!-- 프로그레스 서클 -->
-        <div class="basis-[22.5%] py-5 rounded-2xl bg-white">
-
+        <div v-for="(e, i) in DoughnutData" :key="i" class="basis-[22.5%] py-5 rounded-2xl bg-white">
+            <DoughnutChart :chartData="e" />
         </div>
         <!--  -->
         <div class="basis-[25%] px-5 py-5 rounded-2xl bg-white">
@@ -22,6 +22,7 @@
 <script>
 import PieChart from '@/components/PieChart.vue'
 import LineChart from '@/components/LineChart.vue'
+import DoughnutChart from '@/components/DoughnutChart.vue'
 export default {
     name:'HomeView',
     data() {
@@ -55,6 +56,44 @@ export default {
                     ]
                 }
             ],
+            DoughnutData:[
+                {
+                    labels: ['VueJs', ''],
+                    datasets: [
+                        {
+                        backgroundColor: ['#41B883', '#EEEEEE'],
+                        data: [40, 60]
+                        }
+                    ]
+                },
+                {
+                    labels: ['VueJs', ''],
+                    datasets: [
+                        {
+                        backgroundColor: ['#41B883', '#EEEEEE'],
+                        data: [69, 31]
+                        }
+                    ]
+                },
+                {
+                    labels: ['VueJs', ''],
+                    datasets: [
+                        {
+                        backgroundColor: ['#41B883', '#EEEEEE'],
+                        data: [30, 70]
+                        }
+                    ]
+                },
+                {
+                    labels: ['VueJs', ''],
+                    datasets: [
+                        {
+                        backgroundColor: ['#41B883', '#EEEEEE'],
+                        data: [80, 20]
+                        }
+                    ]
+                },
+            ],
             LineData:{
                 labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
                 datasets: [
@@ -66,9 +105,15 @@ export default {
                 ]}
         }
     },
+    computed:{
+        PercentNull(e){
+            return (100-e);
+        }
+    },
     components:{
         PieChart,
-        LineChart
+        LineChart,
+        DoughnutChart
     }
 }
 </script>
