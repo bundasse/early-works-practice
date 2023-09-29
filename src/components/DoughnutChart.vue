@@ -1,7 +1,7 @@
 <template>
     <div class="relative">
         <Doughnut :data="chartData" :options="chartOptions"/>
-        <p class="absolute translate-x-28 -translate-y-44 text-6xl font-bold">{{ chartData.datasets[0].data[0] }}</p>
+        <p class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-7xl font-bold">{{ chartData.datasets[0].data[0] }}</p>
     </div>
 </template>
 <script>
