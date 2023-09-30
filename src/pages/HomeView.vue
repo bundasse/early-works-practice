@@ -6,12 +6,12 @@
             <PieChart :chartData="e" />
         </div>
         <!-- 프로그레스 서클 -->
-        <div v-for="(e, i) in DoughnutData" :key="i" class="basis-[22.5%] py-5 rounded-2xl bg-white">
+        <div v-for="(e, i) in DoughnutData" :key="i" class="basis-[24%] py-5 rounded-2xl bg-white">
             <DoughnutChart :chartData="e" />
         </div>
         <!--  -->
-        <div class="basis-[25%] px-5 py-5 rounded-2xl bg-white">
-
+        <div class="basis-[32%] px-5 py-5 rounded-2xl bg-white">
+            뭘넣을까용
         </div>
         <!-- 라인 차트 -->
         <div class="basis-[65%] px-5 py-5 rounded-2xl bg-white">
@@ -61,7 +61,7 @@ export default {
                     labels: ['VueJs', ''],
                     datasets: [
                         {
-                        backgroundColor: ['#41B883', '#EEEEEE'],
+                        backgroundColor: ['#0891b2', '#EEEEEE'],
                         data: [40, 60]
                         }
                     ]
@@ -70,7 +70,7 @@ export default {
                     labels: ['VueJs', ''],
                     datasets: [
                         {
-                        backgroundColor: ['#41B883', '#EEEEEE'],
+                        backgroundColor: ['#0891b2', '#EEEEEE'],
                         data: [69, 31]
                         }
                     ]
@@ -79,7 +79,7 @@ export default {
                     labels: ['VueJs', ''],
                     datasets: [
                         {
-                        backgroundColor: ['#41B883', '#EEEEEE'],
+                        backgroundColor: ['#0891b2', '#EEEEEE'],
                         data: [30, 70]
                         }
                     ]
@@ -88,7 +88,7 @@ export default {
                     labels: ['VueJs', ''],
                     datasets: [
                         {
-                        backgroundColor: ['#41B883', '#EEEEEE'],
+                        backgroundColor: ['#0891b2', '#EEEEEE'],
                         data: [80, 20]
                         }
                     ]
@@ -99,7 +99,7 @@ export default {
                 datasets: [
                     {
                     label: 'Data One',
-                    backgroundColor: '#f87979',
+                    backgroundColor: '#0891b2',
                     data: [40, 39, 10, 40, 39, 80, 40]
                     }
                 ]}
